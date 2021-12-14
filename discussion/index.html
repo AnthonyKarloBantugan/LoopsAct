@@ -4,19 +4,31 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
+    
     <!-- BOOTSTRAP CSS -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css" integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
-
+    
     <title>JS Repetition Control Structures</title>
 </head>
 <body>
-
+    
     <div class="m-5">
         <h2>Repetition Control Structures</h2>
         <div class="row">
             <div class="col-4">
-                <div class="form-group"><label for="">Task 1</label><input type="number" name="" id="task1" class="form-control"><button type="submit" class="btn btn-primary btn-block mt-5">Enter 1</button></div>
+                <div class="form-group">
+                    <label for="task1">While Loop</label>
+                    
+                    <!-- get user info -->
+                    <input type="number" name="" id="task1" class="form-control">
+
+                    <!-- to start the process -->
+                    <button type="submit" class="btn btn-primary btn-block mt-5" onclick="countUsingWhile()">Enter 1</button>
+
+                    <!-- display the message to the user if the value is NOT valid -->
+                    <p id="message" class="text-danger"></p>
+
+                </div>
             </div>
             <div class="col-4">
                 <div class="form-group"><label for="">Task 2</label><input type="number" name="" id="task2" class="form-control"><button type="submit" class="btn btn-primary btn-block mt-5">Enter 2</button></div>
@@ -26,10 +38,10 @@
             </div>
         </div>
     </div>
-
+    
     <!-- JS LINK -->
     <script src="./app.js"></script>
-
+    
     <!-- BOOTSTRAP JAVASCRIPT BUNDLE -->
     <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
