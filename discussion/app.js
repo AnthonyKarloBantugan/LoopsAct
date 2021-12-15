@@ -180,3 +180,31 @@ function detectPalindrome() {
        response.innerHTML = '<h3 class="text-danger">Value is Invalid</h3>';
     }
 }
+// =============================================
+
+// create a function that will allow us to only display the odd numbers from a set of integers.
+function getOddNumbers() {
+    // target the value of the input field.
+    let inputCount = document.getElementById('value4').value;
+    let res = document.getElementById('getOddNum');
+    // alert(inputCount);
+    // validate the data to make sute to only get positive numbers
+    if (inputCount > 0) {
+        // response if pass
+
+        // create a loop that will produce the set of number depending on the input of the user.
+        for (let count = 0; count <= inputCount; count++) {
+        // lets create another logic that will tweak out the even numbers away from the set of number.
+            if (count % 2 === 0) {
+                // even number
+                continue;
+            } 
+            // print out the series of numbers inside the console.
+            console.log(count);
+        }
+        // res.innerHTML = '<h3 class="text-warning"> Proceed </h3>';
+    } else {
+        // response if fail
+        res.innerHTML = '<h3 class="text-danger"> The Number should be greater than 0 </h3>';
+    } 
+}
