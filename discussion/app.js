@@ -135,3 +135,21 @@ function accessElementsInString() {
         alert('value is invalid');
     }
 }
+// =================================================
+
+// Detect if the word is a palindrome.
+function detectPalindrome() {
+    //1. get input using DOM selectors
+   let word =  document.getElementById('word').value;
+   let response = document.getElementById('detectPalindrome');
+   //2. validate the data if it is indeed the the correct type of info. 
+    // alert(word);
+
+    if (word !== '') {
+        //response
+       response.innerHTML = '<h3 class="text-success">Value is Valid</h3>'; 
+    } else {
+        // response
+       response.innerHTML = '<h3 class="text-danger">Value is Invalid</h3>';
+    }
+}
