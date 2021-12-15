@@ -137,6 +137,16 @@ function accessElementsInString() {
 }
 // =================================================
 
+// how to access elements of string? [value/index]
+// 0 1 2 nth
+// K a hit ano
+
+// Behavior: If the string provided is an odd number, the middle charagcter does not need to be checked.
+    // d a d //palindrome
+    // k a y a k //palindrome
+// we will create a loop through half of the string's character that checks if the letters at the front and at the back of the string are the same.
+
+
 // Detect if the word is a palindrome.
 function detectPalindrome() {
     //1. get input using DOM selectors
@@ -146,8 +156,24 @@ function detectPalindrome() {
     // alert(word);
 
     if (word !== '') {
-        //response
-       response.innerHTML = '<h3 class="text-success">Value is Valid</h3>'; 
+        // identify how long the word is.
+        let wrdLength = word.length;
+        // initalization => identify the starting point of the loop.
+        // condition => describes how the loop will progress and terminates.
+        // iteration -> how to advance to the next process.
+        for (let index = 0; index < wrdLength / 2; index++) {
+            // instruction that will upon each iteration of the loop.
+            // we are trying to get the current element in the string according to the index count
+            // get the last element of the string by deducting 1 in the current legth of the string since the index count of each element inside a string starts with 0.
+            if (word[index] !== word[wrdLength - 1 - index]) {
+                //response
+                response.innerHTML = word + '<h3 class="text-secondary"> is Not a Palindrome</h3>'; 
+            } else {
+                console.log(word[index] + ' is the same as ' + word[wrdLength - 1 - index]);
+                response.innerHTML = word + '<h3 class="text-success"> is a Palindrome</h3>';
+            }
+        }
+        
     } else {
         // response
        response.innerHTML = '<h3 class="text-danger">Value is Invalid</h3>';
