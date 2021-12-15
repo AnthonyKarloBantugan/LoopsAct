@@ -141,7 +141,7 @@ function accessElementsInString() {
 // 0 1 2 nth
 // K a hit ano
 
-// Behavior: If the string provided is an odd number, the middle charagcter does not need to be checked.
+// Behavior: If the string provided is an odd number, the middle character does not need to be checked.
     // d a d //palindrome
     // k a y a k //palindrome
 // we will create a loop through half of the string's character that checks if the letters at the front and at the back of the string are the same.
@@ -158,6 +158,7 @@ function detectPalindrome() {
     if (word !== '') {
         // identify how long the word is.
         let wrdLength = word.length;
+        console.log(wrdLength);
         // initalization => identify the starting point of the loop.
         // condition => describes how the loop will progress and terminates.
         // iteration -> how to advance to the next process.
