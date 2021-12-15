@@ -58,7 +58,7 @@ function countUsingDoWhile() {
         let displayText =  document.getElementById('info');
            displayText.innerHTML = number + ' is Valid';
         do {
-            // the lock of code identified here will be executed first.
+            // the block of code identified here will be executed first.
             alert('count value:' + indexStart); //for us to display the changes in the calue of the indexStart Variable.
            indexStart++ //a value of 1 was added because the value was incremented
         } while (indexStart <= number) {
@@ -168,7 +168,7 @@ function detectPalindrome() {
             // get the last element of the string by deducting 1 in the current legth of the string since the index count of each element inside a string starts with 0.
             if (word[index] !== word[wrdLength - 1 - index]) {
                 //response
-                response.innerHTML = word + '<h3 class="text-secondary"> is Not a Palindrome</h3>'; 
+                response.innerHTML = word + '<h3 class="text-danger"> is Not a Palindrome</h3>'; 
             } else {
                 console.log(word[index] + ' is the same as ' + word[wrdLength - 1 - index]);
                 response.innerHTML = word + '<h3 class="text-success"> is a Palindrome</h3>';
@@ -200,7 +200,7 @@ function getOddNumbers() {
                 continue;
             } 
             // print out the series of numbers inside the console.
-            console.log(count);
+            alert(count);
         }
         // res.innerHTML = '<h3 class="text-warning"> Proceed </h3>';
     } else {
@@ -208,3 +208,6 @@ function getOddNumbers() {
         res.innerHTML = '<h3 class="text-danger"> The Number should be greater than 0 </h3>';
     } 
 }
+// =================================================
+// stretch goal:
+// modify/customize to fit the design of the project discussion 
